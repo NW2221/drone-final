@@ -1,0 +1,3 @@
+curl -X POST http://68.183.159.42:8080/api/drone-data \
+-H "Content-Type: application/json" \
+-d '{"gps": {"latitude": 30.6954, "longitude": -88.0399}, "image": "https://example.com/image.jpg", "confidence": 0.95}'

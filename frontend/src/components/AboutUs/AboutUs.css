@@ -1,0 +1,158 @@
+
+/* Animation for the profile to move in from the left */
+@keyframes moveInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .animated-aboutus {
+    animation: moveInFromLeft 1s ease-out forwards;
+    opacity: 0;
+  }
+  
+  .animated-description {
+    animation: moveInFromLeft 1s ease-out forwards;
+    opacity: 0;
+    animation-delay: 0.7s; /* Optional: delay the start of the animation */
+  }
+  
+  .animated-our_technology {
+    animation: moveInFromLeft 1s ease-out forwards;
+    opacity: 0;
+    animation-delay: 1.4s; /* Optional: delay the start of the animation */
+  }
+  
+  .animated-our_des {
+    animation: moveInFromLeft 1s ease-out forwards;
+    opacity: 0;
+    animation-delay: 2.1s; /* Optional: delay the start of the animation */
+  }
+  
+  .animated-team {
+    animation: moveInFromLeft 1s ease-out forwards;
+    opacity: 0;
+    animation-delay: 2.8s; /* Optional: delay the start of the animation */
+  }
+  
+  @keyframes moveInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .animated-team-reversed {
+    animation: moveInFromRight 1s ease-out forwards;
+    opacity: 0;
+    animation-delay: 2.8s; /* Optional: delay the start of the animation */
+  }
+  
+  .animated-members {
+    animation: moveInFromLeft 1s ease-out forwards;
+    opacity: 0;
+    animation-delay: 3.5s; /* Optional: delay the start of the animation */
+  }
+  
+  .aboutus { /* general set up for the about us page */
+      overflow-y: scroll; /* Enable vertical scrolling */
+      scrollbar-width: none; /* Options: auto, thin, none */
+      /* scrollbar-color: #888 #f1f1f1; I guess Only if we need it*/
+        background-image: url('../images/drone1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+      background-position: center;
+        width: 100vw; /* 300px */
+        height: 100vh; /* 100% */
+        margin: 0 auto;
+        padding-top: 10px;
+  }
+  
+  
+  .image-box {
+      width: 800px; /* Set the width of the image box */
+      border: 2px solid #ccc; /* Add a border */
+      border-radius: 10px; /* Rounded corners */
+      overflow: hidden; /* Ensure the image stays within the box */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow */
+    }
+    
+    .image-box img {
+      width: 100%; /* Make the image fill the box */
+      height: auto; /* Maintain aspect ratio */
+      display: block; /* Remove extra space below the image */
+    }
+  
+  .container button {
+      border-radius: 8px;
+  }
+  
+  /* Image container styles */
+  .image-container {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-top: -5px;
+    text-align: left;
+  }
+  
+  /* Image layout styles */
+  .image-layout {
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    margin: 5px;
+  }
+  
+  /* Description settings */
+  .display-setting {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  
+  /* Member description text */
+  .about-member {
+    font-size: 10pt;
+    margin: 0;
+  }
+  
+  /* Member name at the bottom */
+  .member_name {
+    font-size: 9pt;
+    margin: 5px;
+    margin-top: -5px;
+  }
+  
+  .homepage_effect:hover{
+    cursor: pointer;
+  }
+  
+  .button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .team-profile-reversed{
+    display: flex;
+    margin-right: 150px;
+    flex-direction: row-reverse; /* Reverse the order of the profile and description */
+  }
+  
+  .team-container{
+    color: white; 
+    margin-Top: -40px; 
+    align-items: center;
+    display: block;
+    margin-left: 150px;
+  }
