@@ -197,6 +197,6 @@ app.delete('/api/drone-data/:id', async (req, res) => {
 
 // Start the server
 const port = process.env.PORT || 8080;
-app.listen(port, '0.0.0.0', () => {
+server.listen(port, '0.0.0.0', () => {
   console.log(`Server running on port ${port}`);
 });

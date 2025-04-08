@@ -11,10 +11,10 @@ const App = () => {
 
   useEffect(() => {
     // Initialize socket connection
-    const socket = io('https://159.65.245.235');
+    const socket = io('/');
     
     // Initial data load
-    fetch('https://159.65.245.235:8080/api/drone-data')
+    fetch('/api/drone-data')
       .then((res) => res.json())
       .then((data) => {
         console.log('API response:', data, 'type:', typeof data, 'isArray:', Array.isArray(data));
